@@ -23,10 +23,15 @@ jobs:
           JEKYLL_ENV: production
       - name: List built HTML pages
         run: find _site -name "*.html" | sort
-      - name: Verify key content rendered
+      - name: Verify key content rendered and demo artifacts absent
         run: |
           test -f _site/index.html
           test -f _site/publications/index.html
           grep -q "Junteng Liu" _site/index.html
           grep -q "SynLogic" _site/publications/index.html
+          test ! -e _site/talkmap/map.html
+          test ! -e _site/talkmap.ipynb
+          test ! -e _site/files/paper1.pdf
+          test ! -d _site/markdown_generator
+          test ! -d _site/scripts
           echo "Build content checks passed."
