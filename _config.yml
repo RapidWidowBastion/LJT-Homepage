@@ -15,7 +15,7 @@ author:
   name: "Junteng Liu"
   pronouns:
   bio: "First-year PhD candidate in the HKUST NLP Group. Research focuses on natural language processing and machine learning, including LLM reasoning, reinforcement learning, hallucination in vision-language models, and LLM truthfulness and interpretability."
-  location: "Hong Kong"
+  location:
   employer: "Hong Kong University of Science and Technology"
   uri:
   email: "jliugi@connect.ust.hk"
